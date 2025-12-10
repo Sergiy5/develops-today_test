@@ -91,7 +91,7 @@ interface MenuItem {
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 20+ 
 - npm or yarn
 
 ### Installation
@@ -143,8 +143,7 @@ All components are documented in Storybook with multiple examples and interactiv
 - Error
 - Warning
 - Info
-- Long Duration
-- Short Duration
+- Custom Duration
 - Not Dismissible
 - Multiple Toasts
 
@@ -153,7 +152,6 @@ All components are documented in Storybook with multiple examples and interactiv
 - One-Level Nested
 - Two-Level Nested
 - Long Scrollable Menu
-- With Click Handlers
 
 ## 🏗️ Project Structure
 
@@ -187,98 +185,37 @@ src/
 
 ### Input Component
 
-**Password Input with Toggle:**
-![Password Input](./screenshots/input-password.png)
+**Password Input:**
+![Password Input](./public/images/screenshots/input_password.png)
 
 **Clearable Input:**
-![Clearable Input](./screenshots/input-clearable.png)
-
-**Input with Error:**
-![Input Error](./screenshots/input-error.png)
+![Clearable Input](./public/images/screenshots/input_clearable.png)
 
 ### Toast Component
 
 **Success Toast:**
-![Success Toast](./screenshots/toast-success.png)
+![Success Toast](./public/images/screenshots/toast_success.png)
 
 **Error Toast:**
-![Error Toast](./screenshots/toast-error.png)
+![Error Toast](./public/images/screenshots/toast_error.png)
 
-**Warning Toast:**
-![Warning Toast](./screenshots/toast-warning.png)
+**Closeble Toast:**
+![Warning Toast](./public/images/screenshots/toast_closable.png)
 
 ### Sidebar Menu
 
 **Closed State:**
-![Sidebar Closed](./screenshots/sidebar-closed.png)
+![Sidebar Closed](./public/images/screenshots/sidebar_close.png)
 
 **Open with Nested Menu:**
-![Sidebar Open](./screenshots/sidebar-nested.png)
+![Sidebar Open](./public/images/screenshots/sidebar_opened.png)
 
 **Expanded Submenu:**
-![Sidebar Expanded](./screenshots/sidebar-expanded.png)
-
-### Storybook Interface
-
-**Component Gallery:**
-![Storybook](./screenshots/storybook-overview.png)
+![Sidebar Expanded](./public/images/screenshots/sidebar_opened_submenu.png)
 
 ## 🎨 Customization
 
 All components use Tailwind CSS classes and can be easily customized:
-
-```typescript
-// Custom styling example
-<Input 
-  className="custom-class" 
-  // ... other props
-/>
-```
-
-## 🧪 Usage Examples
-
-### Input Component
-```typescript
-import Input from '@/components/Input/Input';
-
-<Input
-  label="Email"
-  type="email"
-  placeholder="Enter your email"
-  clearable
-  onChange={(e) => console.log(e.target.value)}
-/>
-```
-
-### Toast Component
-```typescript
-import Toast from '@/components/Toast/Toast';
-
-<Toast
-  message="Successfully saved!"
-  type="success"
-  duration={3000}
-  onClose={() => console.log('Closed')}
-/>
-```
-
-### Sidebar Menu
-```typescript
-import SidebarMenu from '@/components/SidebarMenu/SidebarMenu';
-import { Home, Settings } from 'lucide-react';
-
-const items = [
-  { id: '1', label: 'Home', icon: <Home /> },
-  { id: '2', label: 'Settings', icon: <Settings /> }
-];
-
-<SidebarMenu
-  isOpen={isOpen}
-  onClose={() => setIsOpen(false)}
-  items={items}
-  title="Navigation"
-/>
-```
 
 ## ✅ Features Implemented
 
@@ -329,8 +266,5 @@ MIT License - feel free to use this component library in your projects!
 
 ## 👨‍💻 Author
 
-Your Name - [Your GitHub Profile]
-
----
-
-**Note:** Remember to add actual screenshots to the `screenshots/` directory and update the paths in this README!
+Sergiy5
+Serhii Kushnir

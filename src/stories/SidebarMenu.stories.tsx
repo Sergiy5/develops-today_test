@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import SidebarMenu, { MenuItem } from '@/components/SidebarMenu';
+import SidebarMenu, { MenuItem } from '@/components/SidebarMenu/SidebarMenu';
 import {
   Home,
   Settings,
@@ -170,6 +170,7 @@ export const LongMenuList: Story = {
 export const WithClickHandlers: Story = {
   render: () => {
     const [lastClicked, setLastClicked] = useState<string>('None');
+    const [isOpen, setIsOpen] = useState(false);
 
     const itemsWithHandlers: MenuItem[] = [
       {
@@ -202,8 +203,6 @@ export const WithClickHandlers: Story = {
         ],
       },
     ];
-
-    const [isOpen, setIsOpen] = useState(false);
 
     return (
       <div className="min-h-screen bg-gray-100 p-8">

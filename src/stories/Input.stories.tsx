@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Input from '@/components/Input';
+import Input from '@/components/Input/Input';
 
 const meta: Meta<typeof Input> = {
   title: 'Components/Input',
@@ -54,36 +54,19 @@ export const Password: Story = {
   },
 };
 
-export const PasswordWithValue: Story = {
-  args: {
-    label: 'Password',
-    type: 'password',
-    value: 'mySecretPassword123',
-  },
-};
-
 export const Clearable: Story = {
   args: {
     label: 'Search',
     placeholder: 'Type to search...',
     clearable: true,
-    value: 'Sample text',
   },
 };
 
-export const ClearableEmpty: Story = {
-  args: {
-    label: 'Search',
-    placeholder: 'Type to search...',
-    clearable: true,
-  },
-};
 
 export const WithError: Story = {
   args: {
     label: 'Email',
     type: 'email',
-    value: 'invalid-email',
     error: 'Please enter a valid email address',
   },
 };

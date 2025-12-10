@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import Input from '@/components/Input';
-import Toast from '@/components/Toast';
-import SidebarMenu, { MenuItem } from '@/components/SidebarMenu';
+import Input from '@/components/Input/Input';
+import Toast from '@/components/Toast/Toast';
+import SidebarMenu, { MenuItem } from '@/components/SidebarMenu/SidebarMenu';
 import { Home as HomeIcon, Settings, User, Bell, FileText, Folder, Mail } from 'lucide-react';
 
 export default function Home() {
